@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bk2FwXvR/65qveECQQBb863etWFFZhjXNXGIhUfcL/jH1fWV0VlKSemVt3cchbJcwLTje8ZvzquIYx7SaSEoZA==",
+  "dgSpecHash": "2hCbF4ZVBvrtBmdcEgk41jvLmXxQqg6nCVcE+LLG0Uiq333wg9tO7H9vhvKi3Ifl68s5IVYHuBgYU1KAXrFiUA==",
   "success": true,
-  "projectFilePath": "D:\\Docker\\06-Deployment-to-Cloud-Exercises-Resources\\06.TaskBoard-ASP.NET-App\\TaskBoard.Data\\TaskBoard.Data.csproj",
+  "projectFilePath": "D:\\Docker\\06-Deployment-to-Cloud-Exercises-Resources\\TaskBoardAzure\\TaskBoard.Data\\TaskBoard.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

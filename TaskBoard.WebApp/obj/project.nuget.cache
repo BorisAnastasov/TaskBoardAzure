@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yAjiIoCkozTdmAAcr4DwatZ3KewNnzL1v9yDiU3+vZ27ICIO8anAnyD/IE+dIE0ZbtgdA+OD+j/AVIsaxnt7Pg==",
+  "dgSpecHash": "BOEp9hzDk64rQ8rGnFGXtnBDxC4gxFdRQ0wQTFvK0x3CGzM24Pivpshlzdh3So1WfBX6VdE3EfxMFa3SHFUHNg==",
   "success": true,
-  "projectFilePath": "D:\\Docker\\06-Deployment-to-Cloud-Exercises-Resources\\06.TaskBoard-ASP.NET-App\\TaskBoard.WebApp\\TaskBoard.WebApp.csproj",
+  "projectFilePath": "D:\\Docker\\06-Deployment-to-Cloud-Exercises-Resources\\TaskBoardAzure\\TaskBoard.WebApp\\TaskBoard.WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

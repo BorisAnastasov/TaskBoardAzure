@@ -11,9 +11,17 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-        options.UseMySql(connectionString,
-            new MySqlServerVersion(new Version(8, 0, 25)) // Update the MySQL version accordingly
-        ));
+            options.UseMySql(
+                builder.Configuration.GetConnectionString("DefaultConnection"),
+                new MySqlServerVersion(new Version(8, 0, 25)), // Update the MySQL version accordingly
+                mySqlOptions => mySqlOptions
+                    .EnableRetryOnFailure(
+                        maxRetryCount: 5, // Number of retry attempts
+                        maxRetryDelay: TimeSpan.FromSeconds(30), // Delay between retries
+                        errorNumbersToAdd: null // Optionally specify error numbers to retry
+                    )
+            )
+        );
 
 builder.Services
     .AddDefaultIdentity<User>(options =>
