@@ -3,14 +3,17 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
+using System.Configuration;
+using System;
 using TaskBoard.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(connectionString)); ;
+        options.UseMySql(connectionString,
+            new MySqlServerVersion(new Version(8, 0, 25)) // Update the MySQL version accordingly
+        ));
 
 builder.Services
     .AddDefaultIdentity<User>(options =>
