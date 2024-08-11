@@ -17,7 +17,7 @@ namespace TaskBoard.Data
             : base(options)
         {
             this.seedDb = seedDb;
-            this.Database.EnsureCreated();
+            Database.EnsureCreated();
         }
 
         public DbSet<Board> Boards { get; set; }
